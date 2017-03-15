@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pizza Console - Unsolved</title>
+  </head>
+  <body>
+    
+    <script type="text/javascript">
+
+var name = prompt("What is your name?");
+    document.write("Welcome: " + name);
+
+
+    setTimeout(function(){
+    alert("Pizzas cost $5 each");
+    var pizzaCount = prompt("How mant pizzas do you want?");
+
+
+    if (pizzaCount < 1) {
+        alert("Please pick a larger number.")
+        var pizzaCount = prompt("How mant pizzas do you want?");
+    }
+
+    else if (pizzaCount >= 1) {
+        var totalCost = pizzaCount * 5.00;
+    }
+
+
+    var isHungry = confirm("Are you still hungry?");
+
+    if (isHungry === true) {
+        var pizzaCount = prompt("How mant pizzas do you want?");
+    } else {
+        document.write("Your total is: $" + totalCost);
+    }
+    }, 1);
+
+
+    
+
+    // Variables
+    var name = prompt("What is your name?");
+    var pizzaCount = prompt("How many pizzas do you want?");
+    var isHungry = confirm("Are you still hungry?");
+    var totalCost = pizzaCount * 5.00;
+
+    
+
+
+
+    alert("Welcome: " + name);
+
+    alert("Pizzas cost $5 each");
+
+    alert("Your total is: $" + totalCost);
+
+    alert("Still Hungry: " + isHungry);
+
+    </script>
+    
+  </body>
+</html>

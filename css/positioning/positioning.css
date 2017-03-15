@@ -1,0 +1,40 @@
+body {
+	background: #3e3e3e;
+}
+
+.container {
+	text-align: center;
+	background: #ffffff;
+	width: 90%;
+	height: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.fixed {
+	position: fixed;
+	background: #3e3e3e;
+	top: 0;
+	left: 0;
+	width: 200px;
+    height: 200px;
+    margin: 0;
+}
+
+
+.relative {
+	position: relative;
+	background: #3e3e3e;
+	width: 400px;
+    height: 200px;
+}
+
+
+.absolute {
+	position: absolute;
+	background: #808080;
+	width: 200px;
+    height: 200px;
+    right: -30px;
+    bottom: 0;
+}

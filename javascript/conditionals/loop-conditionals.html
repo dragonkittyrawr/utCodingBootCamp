@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Looping Through Arrays</title>
+</head>
+
+<body>
+    <h1>Open the console to see the magic!</h1>
+    <script>
+    //var myFarm = ["chickens", "pigs", "cows", "horses", "ostriches"];
+    //Then check if the first letter in the animal's name begins with a "c" or "o." If it does, create an alert saying, "Starts with 'c' or 'o'!"
+
+
+
+    // Creating an array of farm animals.
+
+    var myFarm = ["chickens", "pigs", "cows", "horses", "ostriches"];
+
+    // Looping through each item in the array and logging a message to the console.
+    for (var i = 0; i < myFarm.length; i++) {
+        console.log("My farm contains " + myFarm[i]);
+        if (myFarm[i].charAt(0) === "c" || myFarm[i].charAt(0) === "o") {
+            console.log(myFarm[i] + " starts with 'c' or 'o'!");
+        }
+    }
+    </script>
+</body>
+
+</html>

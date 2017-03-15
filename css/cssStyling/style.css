@@ -1,0 +1,29 @@
+p {
+font-family: "Lucida Sans Pro";
+word-spacing: 5px;
+text-indent: 1.5rem;
+}
+
+p::first-letter {
+	font-size: 30px;
+	color: rebeccapurple;
+	padding: 2px;
+	}
+
+.bold  {
+	font-weight: 700;
+	font-family: 'Roboto', sans-serif;
+}
+
+.inbiggin {
+	font-size: 24px;
+	word-spacing: 5px;
+	font-family: 'Baloo Bhaina', cursive;
+}
+
+.tall {
+	line-height: 50px;
+	font-family: 'Diplomata SC', cursive;
+}
+
+
