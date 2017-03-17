@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trigger Clicked</title>
+    <!-- Added link to the jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+    <h1>Click to Eat Sandwich</h1>
+    <h3 id="pbj">Peanut Butter Jelly</h3>
+    <div id="pbjImg"></div>
+    <h3 id="grillcheese">Grilled Cheese</h3>
+    <div id="grillImg"></div>
+    <h3 id="roastbeef">Roast Beef</h3>
+    <div id="beefImg"></div>
+    <div id="total">You have eaten 0 sandwiches.</div>
+    <script type="text/javascript">
+    // This document.ready isn't necessary in this example... but is needed in cases where the HTML is complex.
+    // This code makes sure that the JavaScript doesn't get run until the HTML is finished loading
+    // It's useful to become familiar with now.
+
+    $(document).ready(function() {
+
+        // VARIABLES
+        // ====================================================================
+        // Here we create variables for tracking the number of sandwiches eaten
+        // ...
+
+        var pb = 0;
+        var grill = 0;
+        var beef = 0;
+
+
+        // ...
+
+        // FUNCTIONS
+        // ====================================================================
+        // Here we create various on "click" functions which capture the clicks
+        // Inside each click event is the code to create an alert, update the counter, then show the updated count.
+        // ...
+
+        // Whenever it is clicked...
+        $("#pbj").on("click", function() {
+            pb++;
+            // ... we trigger an alert.
+            alert("Now I need some milk!");
+
+            // And increment count
+            alert(pb);
+
+            totalCost("#total");
+
+            $("#pgjImg").html("<img id='PBJ' src='http://allthingsd.com/files/2012/08/peanut_butter_jelly430x300.jpeg'/>");
+
+        });
+
+        $("#grillcheese").on("click", function() {
+            grill++;
+            // ... we trigger an alert.
+            alert("Goes better with tomato soup!");
+
+            // And increment count
+            alert(grill);
+            totalCost("#total");
+
+            $("#grillImg").html("<img id='Grilled Cheese' src='http://cdn.funcheap.com/wp-content/uploads/2014/04/The-Perfect-Grilled-Cheese-Sandwich-800-158111.jpg' />");
+
+        });
+
+
+        $("#roastbeef").on("click", function() {
+            beef++;
+            // ... we trigger an alert.
+            alert("Yummy!");
+
+            // And increment count
+            alert(beef);
+            totalCost("#total");
+
+            $("#beefImg").html("<img id='Roast Beef' src='https://www.cscassets.com/recipes/wide_cknew/wide_25336.jpg' />");
+
+        });
+
+        // $("#total").on
+
+        // var totalCount = $("#total");
+
+        function totalCost() {
+            var all = (pb + grill + beef);
+
+            $("#total").html("<p>You have eaten " + all + " sandwiches.<p>");
+
+            console.log(all);
+        }
+
+
+
+
+
+        // ...
+
+    });
+    </script>
+</body>
+
+</html>

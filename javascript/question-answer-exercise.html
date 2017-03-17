@@ -1,60 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Super Awesome Fun Time</title>
 </head>
+
 <body>
-
-<script type="text/javascript">
-
-// Question/Answer Key
-
-
-key = {
-	q1: ["The sky is blue.", "True"],
-	q2: ["The grass is blue.", "False"],
-	q3: ["Question", "Answer"],
-	q4: ["Question", "Answer"],
-	q5: ["Question", "Answer"],
-	q6: ["Question", "Answer"],
-	q7: ["Question", "Answer"],
-	q8: ["Question", "Answer"],
-	q9: ["Question", "Answer"],
-	q10: ["Question", "Answer"]
-};
+    <div id="game">
+        <p>Press any key to begin!</p>
+    </div>
+    <script type="text/javascript">
+    // Question/Answer Key
 
 
-var ans1 = prompt(key.q1[0]);
 
+    var questions = {
+        q1: ["The sky is blue.", "t"],
+        q2: ["Lorem is ipsum.", "f"],
+        q3: ["Lorem is lorem.", "t"],
+        q4: ["Et tu, Brute?", "t"],
+        q5: ["Africa is a country.", "f"],
+        q6: ["You are reading this question.", "t"],
+        q7: ["The grass is blue.", "f"],
+        q8: ["The sky is green.", "f"],
+        q9: ["Daylight savings time is terrible, and serves no purpose.", "t"],
+        q10: ["You are writing this question.", "f"]
+    };
 
-if (ans1 === key.q1[1]) {
-	alert("Correct!");
-}
-
-else {
-	alert("Sorry, not correct.");
-}
-
-
-var ans2 = prompt(key.q2[0]);
-
-
-if (ans2 === key.q2[1]) {
-	alert("Correct!");
-}
-
-else {
-	alert("Sorry, not correct.");
-}
+    var score = 0;
 
 
 
 
+    document.onkeyup = function(event) {
+
+            // Determine which key was pressed
+            var userGuess = event.key;
+            console.log(userGuess);
+
+            var html = "<p>Score: " + score + "</p>";
+            document.querySelector("#game").innerHTML = html;
 
 
-</script>
+            for (var num = 1; num < 11; num++) {
 
 
 
+
+                var q = "q" + num;
+                // console.log(q);
+                var a = prompt("Question: " + questions["q" + num][0]);
+
+                if (a === questions["q" + num][1]) {
+                    alert("Correct!");
+                    score += 1;
+
+                } else {
+                    alert("Sorry, not correct.");
+                }
+
+
+            };
+
+
+
+
+        } // closing document.onkeyup
+    </script>
 </body>
+
 </html>

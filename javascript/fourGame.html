@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+
+<body onload="gamePlay">
+    <h1>Computer's Guess: <div id="comp"></div></h1>
+    <h1>Your Guess: <div id="user"></div></h1>
+    <input type="button" id="btn1" value="1">
+    <input type="button" id="btn2" value="2">
+    <input type="button" id="btn3" value="3">
+    <input type="button" id="btn4" value="4">
+    <script type="text/javascript">
+    
+
+
+
+    function gamePlay() {
+        var compGuess = Math.floor(Math.random() * 4) + 1;
+    
+
+    
+
+
+
+
+    $("#btn1").on("click", gamePlay("#btn1"))
+
+    if (compGuess === 1) {
+        alert("Correct!");
+    } else {
+        alert("Sorry that's not the number!");
+    };
+
+    $("#btn2").on("click", gamePlay("#btn2"))
+    var compGuess = Math.floor(Math.random() * 4) + 1;
+    if (compGuess === 2) {
+        alert("Correct!");
+    } else {
+        alert("Sorry that's not the number!");
+    };
+
+    $("#btn3").on("click", gamePlay("#btn3"))
+    var compGuess = Math.floor(Math.random() * 4) + 1;
+    if (compGuess === 3) {
+        alert("Correct!");
+    } else {
+        alert("Sorry that's not the number!");
+
+
+
+    };
+
+    $("#btn4").on("click", gamePlay("#btn4"))
+    var compGuess = Math.floor(Math.random() * 4) + 1;
+    if (compGuess === 4) {
+        alert("Correct!");
+    } else {
+        alert("Sorry that's not the number!");
+    };
+
+    };
+    </script>
+</body>
+
+</html>

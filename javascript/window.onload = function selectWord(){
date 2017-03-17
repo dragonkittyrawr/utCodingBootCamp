@@ -1,0 +1,22 @@
+window.onload = function selectWord(){
+    playerWord = wordLib[Math.floor(Math.random()* 7)];
+    var res = playerWord.split("");
+    console.log(res);
+
+    var wordLength = res.length;
+    console.log(wordLength);
+
+    var wordPlaceHolder = document.getElementById("wordSpace");
+
+    //loop through length of the selected word to place a '_' where a letter would go
+    for (var i = 0; i < wordLength; i++){
+        //make a variable that creates a div. this placeholder will get overwritten with each iteration of the loop.
+     var newDiv = document.createElement("div");
+     
+     //sets the value of the innerHTML of the div to the array at index
+     newDiv.innerHTML = wordLib[i];
+
+     //adds the value of index to the page without losing the previous responses.
+     var addHashtag = wordPlaceHolder.appendChild(newDiv);
+    }
+} //ALL OF THIS TO GET THE HASHTAGS AND SELECT WORD
