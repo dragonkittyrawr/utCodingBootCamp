@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Calculator</title>
+    <!-- Added link to the jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="text-center">jQuery Calculator</h1>
+        <h3 class="text-center">Perform basic mathematic operations using the power of jQuery!</h3>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Calculator Panel -->
+            <div class="col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">String Calculator</h3>
+                    </div>
+                    <div class="panel-body">
+                        <input type="text" id="userString" placeholder="Add 2 and 4">
+                        <
+                    </div>
+                </div>
+            </div>
+            <!-- Result Panel -->
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Result</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h1 id="result"></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+
+    var userInput = "";
+
+    $(document).ready(function() {
+
+      userInput = $('#userString').val();
+      console.log(userInput);
+
+
+
+
+
+    });
+    </script>
+</body>
+
+</html>
