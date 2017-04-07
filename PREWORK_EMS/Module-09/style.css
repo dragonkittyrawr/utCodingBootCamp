@@ -1,0 +1,55 @@
+<style>
+
+.middle {
+	text-align: center;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
+}
+
+.orange {
+    color: orange;
+}
+
+
+.big {
+	font-size: 24px;
+}
+
+.tiny {
+	font-size: 12px;
+}
+
+.bold {
+	font-weight: bold;
+
+}
+
+.altFont {
+	font-family: Monospace;
+}
+
+.styledFont {
+    letter-spacing: 3px;
+    font-size: 14px;
+    color: #634138;
+}
+
+#styledImage {
+	border-style: solid;
+	border-width: 4px;
+	border-color: purple;
+
+}
+
+
+</style>

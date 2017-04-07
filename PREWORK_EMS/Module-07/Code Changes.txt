@@ -1,0 +1,14 @@
+Errors Found:
+
+In logic.js - BrokenCode:
+- Separated the variables in the booFacts array with quotes.
+- Put quotes around pink for #textPink.
+- Put quotes around click for picture growing functions.
+
+
+In BooTheDog.html
+- Added <li></li> tags around Boo’s favorite things.
+- Added <h1></h1> tags around “Boo The Dog Fan Page!”.
+- Added brackets to image.
+- Added <p> tags to “About Boo” section.
+- Linked to updated logic.js file.

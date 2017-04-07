@@ -1,0 +1,56 @@
+body { 
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+	text-align: center;
+	letter-spacing: 2px;
+	font-weight: bold;
+	padding-top: 25px;
+}
+
+h2 {
+	letter-spacing: 2px;
+	font-weight: bold;
+	padding-left: 10px;
+	margin-bottom: 0px;
+}
+
+h3 {
+	letter-spacing: 2px;
+	font-weight: bold;
+	padding-left: 12px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+table {
+	border: 2px solid black;
+	text-align: center;
+	margin-left: 10px;
+	border-collapse: collapse;
+}
+
+th, td {
+	border: 2px black solid;
+}
+
+.scroll {
+	background-color: white;
+	margin: 100px 100px 100px 100px;
+
+}
+
+.middle {
+	text-align: center;
+}
+
+.bio {
+	padding: 0px 10px 10px 10px;
+}
+
+.video {
+	padding-left: 15px;
+}
