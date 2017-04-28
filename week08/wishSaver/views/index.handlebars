@@ -1,0 +1,14 @@
+<h1>Wish Saver</h1>
+
+<h3>A repository of famous wishes.  Also your wishes!</h3>
+
+<ul>
+{{#each wishes}}
+<li><p>Wish {{id}}: {{wish}}</p></li>
+{{/each}}
+</ul>
+<form action="/" method="POST">
+	<textarea type="text" name="event">Type or Paste wish here.</textarea>
+
+	<button type="submit">Submit</button>
+</form>
