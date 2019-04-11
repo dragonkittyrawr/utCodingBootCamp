@@ -1,0 +1,9 @@
+  DO THE THING : 
+    cracking the coding interview. /* companies use this book as a interview textbook */
+    codecademy has a quiz section.
+    https://interviewing.io/
+    https://www.pramp.com/
+    https://www.interviewcake.com/
+    hackerrank.com  /* some employers look at your hackerrank scores! You can also add this to a resume. One employer made their interviewee do hackerrank live to determine their competency */ 
+    codefights.com
+    https://codility.com/programmers/
